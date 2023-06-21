@@ -17,8 +17,8 @@ public class StringUtilsGetMiddleCharacterTest {
     @Test
     public void test1(){
         //Given
-        String word = "Aggadah";
-        char expected = 'a';
+        String word = "Aggada";
+        char expected = 'g';
 
         //When
         char actual = utilities.getMiddleCharacter(word);
