@@ -21,7 +21,7 @@ public class StringUtilities {
         result = word.charAt((word.length()-1)/2);
         return result;
     }
-
+    
     public String removeCharacter(String value, Character charToRemove) {
         String result = "";
         for (int i = 0; i < value.length(); i++) {
@@ -34,9 +34,12 @@ public class StringUtilities {
 
     /**
      * @param sentence String delimited by spaces representative of a sentence
-     * @return last `word` in sentenceasdfadsf
+     * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        String last = sentence.substring(sentence.lastIndexOf(" ") + 1);
+//        String[] result = sentence.split(" ");
+        return last;
+//        return result[result.length - 1];
     }
 }
